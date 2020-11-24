@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Глава сайта Главный блок header */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header-bg.jpg) center / cover  fixed;
+    text-align: center;
+}
+
+/* Блок nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    flex-wrap: wrap;
+}
+
+nav ol{
+    list-style: none;
+}
+
+nav ol:hover li a{
+    color: rgb(221, 15, 105);
+    text-decoration: underline rgba(41, 7, 162, 0.939);
+    transition: 1s;
+    font-weight: 600;
+}
+
+nav ol li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li:hover a{
+    border: 2px solid rgb(221, 15, 105);
+    padding: 1px 2px;
+    color: rgb(28, 208, 190);
+    background-color: rgba(235, 235, 235, 0.3);
+    border-radius: 3px;
+    transition: 1s;
+    font-weight: 600;
+}
+
+nav ul li{
+    margin: 5px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.a_link a:hover{
+    color: rgba(10, 80, 100, 0.939);
+    background-color: rgba(87, 6, 23, 0.939);
+    border:  3px solid rgba(7, 232, 127, 0.939);
+    border-radius: 10px;
+    transition: .8s;
+}
+
+/* Блок main_banner */
+
+.main_banner{
+    text-align: center;
+    margin: 100px 0;
+}
+
+.main_banner h1 i{
+    font-weight: 200;
+    font-size: 40px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.main_banner h2{
+    font-size: 45px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.main_banner .a_link{
+    padding: 20px 0;
+}
+
+
+.main_banner a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, .9);
+    background-color: goldenrod;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: 300;
+}
+
+
+
+/*  Второстипенные блоки main  */
+
+/* Блок  service*/
+
+.title{
+    text-align: center;
+    margin:  50px 0;
+}
+
+.title h1{
+    font-size: 30px;
+}
+
+.title p{
+    color: gray;
+}
+
+/* services_container */
+
+
+.services_container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.img_block{
+    padding: 25px;
+    width: 70px;
+    margin: 0 auto;
+    background-color: #fed136;
+    border-radius: 50%;
+}
+
+.img_block img{
+    width: 70px;
+}
+
+.img_card{
+    margin: 0 50px;
+}
+
+/* Блок Portfolio */
+
+#portfolio{
+    background-color: rgba(235, 235, 235, 0.8);
+    padding: 50px 0;
+}
+
+.portfolio_container{
+    margin: 100px 0;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.potrfolio_card{
+    background-color: #fff;
+    margin: 10px 20px;
+}
+
+.potrfolio_card img{
+    width: 350px;
+}
+
+/* Блок about */
+
+.about_container{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.about_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_card div{
+    margin: 0 20px;
+}
+
+.text{
+    text-align: right;
+    width: 400px;
+}
+
+.text2{
+    text-align: left;
+    width: 400px;
+}
+
+hr{
+    border: 1px dashed grey;
+}
+
+.circle img{
+    border: 5px solid gainsboro;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* Блок team */
+
+#team{
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    padding: 50px 0;
+}
+
+.our_team{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.team_img img{
+    width: 200px;
+    border: 5px solid gray;
+    border-radius: 50%;
+    flex-wrap: wrap;
+}
+
+.block_team i{
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
+    color: #fff;
+}
+
+/* Блок партнеры "OUR PARTNERS"  */
+
+.partners{
+    width: 100%;
+    margin: 30px 0 ;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.our_partners{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.our_partners img{
+    width: 120px;
+}
+
+/* Блок CONTACT US */
+
+#contact_us{
+    width: 100%;
+    background: url(../img/bg_map.jpg) center / cover ;
+    justify-content: space-around;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.title2{
+    color: #fff;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.title2 h1{
+    font-size: 35px;
+}
+
+.flex_contact{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    
+
+.contact_flex input{
+    margin: 20px 0px;
+    padding: 18px 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.textarea textarea{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.link_a{
+    margin: 20px 0;
+}
+
+.link_a a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: gold;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.link_a a:hover{
+    color: rgba(10, 80, 100, 0.939);
+    background-color: rgba(87, 6, 23, 0.939);
+    border:  3px solid rgba(7, 232, 127, 0.939);
+    border-radius: 10px;
+    transition: .8s;
+}
+
+.foot{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foot .icons{
+    margin: 15px 0;
+}
+
+.icons a i{
+    background-color: black;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+@media (max-width:640px){
+    nav{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    nav ol{
+        max-width: 350px;
+    }
+
+    nav ul{
+        max-width: 350px;
+        display: inline-block;
+    }
+
+    .main_banner .a_link{
+        padding: 20px 0;
+    }
+
+    .main_banner h1 i{
+        font-size: 25px;
+    }
+
+    .main_banner h2{
+        font-size: 20px;
+    }
+
+    .services_container{
+        flex-wrap: wrap;
+    }
+
+    .potrfolio_card img{
+        max-width: 100%;
+    }
+
+    .about{
+        max-width: 100%;
+    }
+
+    .about_container{
+        max-width: 100%;
+        padding: 0 40px;
+        font-size: 15px;
+    }
+
+    .about_card img{
+        max-width: 100px;
+    }
+
+    .textarea textarea{
+        max-width: 70%;
+        max-height: 100%;
+    }
+
+    .foot{
+        max-width: 98%;
+        margin: 0 2%;
+    }
+}
+
+
+@media (max-width:480px){
+
+    nav{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    nav ol{
+        max-width: 350px;
+    }
+
+    nav ul{
+        max-width: 350px;
+        display: inline-block;
+    }
+
+
+    .main_banner .a_link{
+        padding: 20px 0;
+    }
+
+
+    .main_banner h1 i{
+        font-size: 25px;
+    }
+
+    .main_banner h2{
+        font-size: 20px;
+    }
+
+    .services_container{
+        flex-wrap: wrap;
+    }
+
+    .potrfolio_card img{
+        max-width: 100%;
+    }
+
+    .about{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .about_container{
+        max-width: 100%;
+        padding: 0 40px;
+        font-size: 15px;
+    }
+
+    .about_card img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .about_card {
+        font-size: 10px;
+    }
+
+    .team{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .title h1{
+        font-size: 15px;
+    }
+
+    .title p{
+        font-size: 10px;
+    }
+
+    .block_team {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .textarea {
+        max-width: 100%;
+    }
+
+    .textarea textarea{
+        max-width: 70%;
+        max-height: 100%;
+    }
+
+    .foot{
+        max-width: 98%;
+        margin: 0 2%;
+    }
+
+    .foot p{
+        font-size: 10px;
+    }
+
+    .icons a i{
+        font-size: 10px;
+    }
+}
